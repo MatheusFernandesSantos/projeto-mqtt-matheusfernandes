@@ -10,15 +10,15 @@ O objetivo desse projeto é utilizar um Arduino Uno mais um Sensor Magnético pa
 
 Foram utilizadas as seguintes bibliotecas:
 
-UIPEthernet (conexão do ENC28J60 com o Arduino) 
-PubSubClient (cliente MQTT para o Arduino) 
+• UIPEthernet (conexão do ENC28J60 com o Arduino) 
+• PubSubClient (cliente MQTT para o Arduino) 
 
 **Materiais
 
-Arduino Uno 
-Módulo Ethernet (ENC28J60) 
-Sensor Magnético (MC-38) 
-Jumpers 
+• Arduino Uno 
+• Módulo Ethernet (ENC28J60) 
+• Sensor Magnético (MC-38) 
+• Jumpers 
 
 **Circuito 
 
