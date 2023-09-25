@@ -1,25 +1,35 @@
-# projeto-mqtt-matheusfernandes
+# Projeto MQTT-matheusfernandes
 Esse repositório tem como objetivo ser usado para a entrega do Projeto desenvolvido na Sprint 8 do 1° TERMO do Curso Técnico de Redes de  Computadores da Escola SENAI de Informática. 
 
+## Objetivo
+O objetivo desse projeto é utilizar o Arduino Uno juntamente com um Sensor Magnético para o monitoramento da porta de um Rack de rede, fazendo a seguinte verificação: **RACK ABERTO** ou **RACK FECHADO**. Após esta análise, a informação será enviada via internet utilizando o protocolo MQTT (_Message Queuing Telemetry Transport_) para um servidor MQTT hospedado na _Amazon Web Service_ (AWS) e assim, exibida em um cliente MQTT.
 
-**Objetivo
+<h1>
+    <h1 align="center">
+    <img src="https://i.ibb.co/yhcL9y8/img1.png">
+</h1>
 
-O objetivo desse projeto é utilizar um Arduino Uno mais um Sensor Magnético para monitorar se a porta de um Rack de Rede está ABERTO ou FECHADO; enviar essa informação via Internet utilizando o protocolo MQTT (Message Queuing Telemetry Transport) para um servidor MQTT hospedado na Amazon Web Service (AWS) e exibir a informação em um cliente MQTT (MQTT Dash) instalado em um Smartphone, conforme imagem abaixo.
+Aplicativo onde as informações serão exibidas:
 
-![](https://camo.githubusercontent.com/7beef2d4780d87a603d7de49b2da0467c8537dff96575b628a04bd4010ebb1cc/68747470733a2f2f692e696d6775722e636f6d2f4d576870586b562e706e67)
+Plataforma | Aplicativo
+--- | ---------
+Android | [MQTT Dash](https://play.google.com/store/apps/details?id=net.routix.mqttdash&hl=pt_BR&gl=US)
+IOS | [MQTTool](https://apps.apple.com/us/app/mqttool/id1085976398)
 
-Foram utilizadas as seguintes bibliotecas:
+Bibliotecas utilizadas:
+- [UIPEthernet](https://github.com/UIPEthernet/UIPEthernet) (Conexão do ENC28J60 com o Arduino)
+- [PubSubClient](https://github.com/knolleary/pubsubclient) (Cliente MQTT para o Arduino)
 
-• UIPEthernet (conexão do ENC28J60 com o Arduino) 
-• PubSubClient (cliente MQTT para o Arduino) 
+## Materiais utilizados
 
-**Materiais
+* Arduino Uno;
+* Módulo Ethernet (ENC28J60);
+* Sensor Magnético (MC-38);
+* Jumpers.
 
-• Arduino Uno 
-• Módulo Ethernet (ENC28J60) 
-• Sensor Magnético (MC-38) 
-• Jumpers 
-
-**Circuito 
-
-![](https://camo.githubusercontent.com/ad1da211b35b60b23fb095a64e76dc6504d0c3229e853bd82a69a4d5d27bbb88/68747470733a2f2f692e696d6775722e636f6d2f594947477453472e706e67)
+## Circuito
+  
+<h1>
+    <h1 align="center">
+    <img src="https://i.ibb.co/7RrjXhk/img2.png">
+</h1>
